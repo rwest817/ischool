@@ -1,0 +1,5 @@
+I didn't know this when I enrolled in the course....but I hope to understand Git/Github a whole lot better by the end of the course.
+
+I'm a graduate student in public policy; I've done a fair amount of data analysis in applied economics, but I have always used "traditional" data sources and relied upon very high-level statistical programs (e.g., Stata, SAS, R). I have only the most rudimentary understanding of how to obtain data from the internet that doesn't come pre-packaged in CSV files, and how to look for patterns or answer questions of interest when I'm not necessarily familiar with its structure or its quality.
+
+Since I tend to learn by doing, I hope to gain enough applied experience with data mining tools, tactics, and exercises to know how to approach the data analysis aspects of any quantitative projects I engage in on my own, but also--and perhaps more importantly for my future work--I want to know the feasible methods, the questions to ask, and the expectations I can have in a business setting of coworkers or collaborators who will do such work.
