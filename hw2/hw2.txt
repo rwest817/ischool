@@ -1,0 +1,65 @@
+Homework 2
+Rachel West
+
+My data source is a CSV  dataset detailing the Titanic's passengers, available from
+ Kaggle: https://www.kaggle.com/c/titanic-gettingStarted/data?train.csv.
+
+I'm using the  command line (first time!) to load and explore the CSV file.
+
+1) What are the types of data that are available to you?
+
+There are string and numeric variables organized into traditional dataset format.
+Each row represents a passenger on the Titanic, and each column is a set of
+characteristics for that passenger. The first column, PassengerID, provides a unique
+identifier, and serves as a key to link this dataset to others in Kaggle's
+collection about the Titanic.
+
+2) For data sets: how many records are in the data set?
+
+The "wordcount" command shows that there are 891 lines in the dataset. This makes
+sense: although there were more than 3000 passengers on the Titanic, I have
+downloaded the training dataset, which contains only a subset of the data.
+
+3) Provide an "interesting" record, explain its properties, and why it is
+interesting.
+
+Look! There's a passenger on the Titanic with the same last name as me!
+
+grep '"Name": "West"' titanic.csv
+
+That's kind of cool. I wonder whether she survived...
+head -n 1 titanic.csv
+
+Column 2 gives survival information (1=survived, 0=died)
+
+awk -F "," '{print $2 }' titanic.csv
+
+
+4) What are 3 questions you could answer using your data?
+
+a) Were females and children disproportionately likely to obtain a place on a
+lifeboat?
+
+b) Were adults males  who had children (assuming same last name identifies  families)
+more likely to survive than adult males without children?
+
+c) What was the probability of survival, conditional upon passenger class (1st,
+2nd, 3rd; available from the variable Pclass). Were privileged adults (i.e.,
+those in 1st class) more likely to survive than poor children (3rd class)? Were
+privileged men more likely to survive than poor women?
+
+
+-------------------
+cd ischool/hw2
+
+# get the csv:
+wget 'https://www.kaggle.com/c/titanic-gettingStarted/data/train.csv'
+
+# view the first 5 lines:
+head -n 5 titanic.csv
+
+# how many characters, words, and lines in the file?
+wc titanic.csv
+
+# is there anyone with my last name on the Titanic?
+grep '"Name": "West"' titanic.csv
